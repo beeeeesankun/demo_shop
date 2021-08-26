@@ -42,6 +42,7 @@
       display: flex;
       &-box {
         width: 50%;
+        background: red;
       }
     }
   }

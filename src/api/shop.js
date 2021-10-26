@@ -344,12 +344,12 @@ const _products = [
 ];
 
 export default {
-  getProducts(cb) {
-    cb(_products);
-  },
   // getProducts(cb) {
-  //   setTimeout(() => cb(_products), 100);
+  //   cb(_products);
   // },
+  getProducts(cb) {
+    setTimeout(() => cb(_products), 100);
+  },
   // buyProducts(products, cb, errorCb) {
   //   setTimeout(() => {
   //     // simulate random checkout failure.

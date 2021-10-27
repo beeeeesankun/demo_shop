@@ -9,7 +9,7 @@
         <figcaption class="card-ditile">
           <small class="card-ditile-gender">{{ item.gender }}</small>
           <p class="card-ditile-name">{{ item.name }}</p>
-          <p class="card-ditile-price">{{ item.price }}</p>
+          <p class="card-ditile-price">￥{{ item.price }}</p>
           <button @click="addItemToCart(item)" v-if="!item.quantity == 0" class="card-btn">
             <i class="fas fa-cart-plus" aria-hidden="true"></i>
           </button>

@@ -1,6 +1,6 @@
 <template>
-  <div class="wrap">
-    <div class="pickup">
+  <div class="pickup">
+    <div class="pickup-inner">
       <titleParts class="pickup-title" titleEn="pick up" titleJa="今週の特集"></titleParts>
       <ul class="pickup-lists">
         <li class="pickup-lists-item">
@@ -29,12 +29,12 @@
 
 <style lang="scss" scoped>
   @use 'baseSet' as aset;
-  .wrap {
-    background: #f5f5f5;
-  }
   .pickup {
-    max-width: 880px;
-    margin: 0 auto;
+    background: #f5f5f5;
+    &-inner {
+      max-width: 880px;
+      margin: 0 auto;
+    }
     padding: 80px 0;
     &-lists {
       display: flex;

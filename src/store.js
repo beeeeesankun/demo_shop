@@ -44,7 +44,6 @@ export default new Vuex.Store({
     },
     setProducts(state, products) {
       state.allProducts = products;
-      console.log('state.allProducts', state.allProducts);
     },
     assignCategory(state, txt) {
       state.keyGender = txt;

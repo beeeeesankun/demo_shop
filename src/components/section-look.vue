@@ -1,6 +1,6 @@
 <template>
-  <div class="look-wrap">
-    <div class="look">
+  <div class="look">
+    <div class="look-inner">
       <titleParts class="look-title" titleEn="look for" titleJa="商品を探す"></titleParts>
       <div class="look-filter">
         <selectBox class="look-filter-box" :ChoicesItems="category" tgt="categoryId" choseTitle="カテゴリー"></selectBox>
@@ -34,9 +34,11 @@
 
 <style lang="scss" scoped>
   .look {
-    &-wrap {
-      padding: 80px 0;
-      background: #f5f5f5;
+    padding: 80px 0;
+    background: #f5f5f5;
+    &-inner {
+      max-width: 1200px;
+      margin: 0 auto;
     }
     &-filter {
       display: flex;

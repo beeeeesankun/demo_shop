@@ -20,7 +20,7 @@
     name: 'look',
     data() {
       return {
-        category: ['women', 'men', 'kids'],
+        category: ['woman', 'man', 'kids'],
         items: ['アウター', 'ボトムス', 'セーター', 'シャツ', 'インナー', 'グッズ'],
       };
     },
@@ -42,7 +42,6 @@
       display: flex;
       &-box {
         width: 50%;
-        background: red;
       }
     }
   }

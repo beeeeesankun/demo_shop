@@ -30,11 +30,12 @@ export default new Vuex.Store({
       state.count++;
     },
     toCart(state, item) {
+      console.log(item.quantity);
       state.itemsInCart.push({
         id: item.id,
         name: item.name,
         price: item.price,
-        quantity: item.quantity,
+        quantity: 1,
         src: item.src,
       });
     },

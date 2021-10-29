@@ -1,5 +1,5 @@
 <template>
-  <div class="recommend-wrap">
+  <div class="recommend">
     <titleParts class="recommend-title" titleEn="recommend for" titleJa="あなたへのおすすめ"></titleParts>
     <Carousel></Carousel>
   </div>
@@ -20,8 +20,8 @@
 
 <style lang="scss" scoped>
   .recommend {
-    &-wrap {
-      padding: 80px 0;
-    }
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
   }
 </style>

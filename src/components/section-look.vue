@@ -1,6 +1,6 @@
 <template>
-  <div class="look-wrap">
-    <div class="look">
+  <div class="look">
+    <div class="look-inner">
       <titleParts class="look-title" titleEn="look for" titleJa="商品を探す"></titleParts>
       <div class="look-filter">
         <selectBox class="look-filter-box" :ChoicesItems="category" tgt="categoryId" choseTitle="カテゴリー"></selectBox>
@@ -20,7 +20,7 @@
     name: 'look',
     data() {
       return {
-        category: ['women', 'men', 'kids'],
+        category: ['woman', 'man', 'kids'],
         items: ['アウター', 'ボトムス', 'セーター', 'シャツ', 'インナー', 'グッズ'],
       };
     },
@@ -34,15 +34,16 @@
 
 <style lang="scss" scoped>
   .look {
-    &-wrap {
-      padding: 80px 0;
-      background: #f5f5f5;
+    padding: 80px 0;
+    background: #f5f5f5;
+    &-inner {
+      max-width: 1200px;
+      margin: 0 auto;
     }
     &-filter {
       display: flex;
       &-box {
         width: 50%;
-        background: red;
       }
     }
   }

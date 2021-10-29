@@ -8,6 +8,7 @@
     <sectionPick></sectionPick>
     <sectionRecommend></sectionRecommend>
     <sectionLook></sectionLook>
+    <sectionFooter></sectionFooter>
   </div>
 </template>
 
@@ -17,6 +18,7 @@
   import sectionPick from './components/section-pickup.vue';
   import sectionRecommend from './components/section-recommend.vue';
   import sectionLook from './components/section-look.vue';
+  import sectionFooter from './components/section-footer.vue';
 
   export default {
     name: 'App',
@@ -26,6 +28,7 @@
       sectionPick,
       sectionRecommend,
       sectionLook,
+      sectionFooter,
     },
   };
 </script>

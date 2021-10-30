@@ -9,6 +9,7 @@ axios
     _products.forEach((e) => {
       e.src = e.src.replace('..', 'https://fukabeakihiro.com/demoEC');
     });
+    console.log(_products);
   })
   .catch((err) => {
     console.log('shop', err);

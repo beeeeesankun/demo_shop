@@ -28,7 +28,7 @@
     },
     computed: {
       val() {
-        return this.$store.state.count;
+        return this.$store.getters.count;
       },
     },
     methods: {},

@@ -13,7 +13,7 @@ export default new Vuex.Store({
       } else {
         commit('toCart', item);
       }
-      commit('increment');
+      commit('sumCount');
     },
     getAllItems(context) {
       shop.getProducts((products) => {
@@ -26,9 +26,6 @@ export default new Vuex.Store({
     },
   },
   mutations: {
-    increment(state) {
-      state.count++;
-    },
     toCart(state, item) {
       state.itemsInCart.push({
         id: item.id,
@@ -58,6 +55,12 @@ export default new Vuex.Store({
       });
       state.showProduct = array;
     },
+    sumCount(state) {
+      let arr = state.itemsInCart.map((e) => {
+        return e.quantity;
+      });
+      state.count = arr.reduce((a, b) => a + b, 0);
+    },
   },
   state: {
     count: 0,
@@ -68,6 +71,9 @@ export default new Vuex.Store({
     showProduct: [],
   },
   getters: {
+    count: (state) => {
+      return state.count;
+    },
     displayItems: (state) => {
       return state.showProduct;
     },

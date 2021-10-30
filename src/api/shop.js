@@ -140,7 +140,6 @@ axios
     NotInStock.forEach((e) => {
       _products.push(e);
     });
-    console.log(_products);
   })
   .catch((err) => {
     console.log('shop', err);

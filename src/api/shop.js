@@ -2,7 +2,7 @@ import axios from 'axios';
 let _products = [];
 const NotInStock = [
   {
-    id: 25,
+    id: null,
     name: '新商品をお待ちください',
     src: require('@/assets/others/noimege.jpg'),
     gender: 'kids',
@@ -11,7 +11,7 @@ const NotInStock = [
     quantity: 0,
   },
   {
-    id: 26,
+    id: null,
     name: '新商品をお待ちください',
     src: require('@/assets/others/noimege.jpg'),
     gender: 'kids',
@@ -20,7 +20,7 @@ const NotInStock = [
     quantity: 0,
   },
   {
-    id: 27,
+    id: null,
     name: '新商品をお待ちください',
     src: require('@/assets/others/noimege.jpg'),
     gender: 'kids',
@@ -29,7 +29,7 @@ const NotInStock = [
     quantity: 0,
   },
   {
-    id: 28,
+    id: null,
     name: '新商品をお待ちください',
     src: require('@/assets/others/noimege.jpg'),
     gender: 'kids',
@@ -38,7 +38,7 @@ const NotInStock = [
     quantity: 0,
   },
   {
-    id: 29,
+    id: null,
     name: '新商品をお待ちください',
     src: require('@/assets/others/noimege.jpg'),
     gender: 'kids',
@@ -47,7 +47,7 @@ const NotInStock = [
     quantity: 0,
   },
   {
-    id: 30,
+    id: null,
     name: '新商品をお待ちください',
     src: require('@/assets/others/noimege.jpg'),
     gender: 'kids',
@@ -56,7 +56,7 @@ const NotInStock = [
     quantity: 0,
   },
   {
-    id: 31,
+    id: null,
     name: '新商品をお待ちください',
     src: require('@/assets/others/noimege.jpg'),
     gender: 'woman',
@@ -65,7 +65,7 @@ const NotInStock = [
     quantity: 0,
   },
   {
-    id: 32,
+    id: null,
     name: '新商品をお待ちください',
     src: require('@/assets/others/noimege.jpg'),
     gender: 'woman',
@@ -74,7 +74,7 @@ const NotInStock = [
     quantity: 0,
   },
   {
-    id: 33,
+    id: null,
     name: '新商品をお待ちください',
     src: require('@/assets/others/noimege.jpg'),
     gender: 'woman',
@@ -83,7 +83,7 @@ const NotInStock = [
     quantity: 0,
   },
   {
-    id: 34,
+    id: null,
     name: '新商品をお待ちください',
     src: require('@/assets/others/noimege.jpg'),
     gender: 'woman',
@@ -92,7 +92,7 @@ const NotInStock = [
     quantity: 0,
   },
   {
-    id: 35,
+    id: null,
     name: '新商品をお待ちください',
     src: require('@/assets/others/noimege.jpg'),
     gender: 'man',
@@ -101,7 +101,7 @@ const NotInStock = [
     quantity: 0,
   },
   {
-    id: 36,
+    id: null,
     name: '新商品をお待ちください',
     src: require('@/assets/others/noimege.jpg'),
     gender: 'man',
@@ -110,7 +110,7 @@ const NotInStock = [
     quantity: 0,
   },
   {
-    id: 37,
+    id: null,
     name: '新商品をお待ちください',
     src: require('@/assets/others/noimege.jpg'),
     gender: 'man',
@@ -119,7 +119,7 @@ const NotInStock = [
     quantity: 0,
   },
   {
-    id: 38,
+    id: null,
     name: '新商品をお待ちください',
     src: require('@/assets/others/noimege.jpg'),
     gender: 'man',
